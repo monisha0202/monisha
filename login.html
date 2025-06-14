@@ -25,6 +25,15 @@
     </select>
     <br></br>
 <button>submit</button>
+
 </form>
+<script>
+    document.getElementary("form").addeventlistener("submit")
+    e.preventDefault();
+    const email=document.getElementaryById("email").value;
+    const password=<document.getElementaryById("password").value;
+    console.log(email,password)
+    document.getElementaryById("result").textcontent=email
+    </script>
 </body>
 </html>

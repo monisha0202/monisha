@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">java script</h1>
+    <button onclick="HandleButtonClicked()">click me!!</button>
+    <br></br>
+    <input tyoe="text" id="name" placeholder="ENTER YOUR NAME">
+    <button oneclick="addname()">Add name</button>
+    <ol id="list"></ol>
+   
+    <script>
+        function addname(){
+            const name= document.getElementById("name");
+            const li=document.createElement("li");
+            li.innerText=name;
+            document.getElementById("list")
+        }
+          function HandleButtonClicked(){
+        console.log("button clicked")
+        const result= document.querySelector("#text")
+        result.innerHTML=result.innerHTML==="HELLO KPRCAS"?"hello world":"HELLO KPRCAS"
+        result.style.color="blue";
+        result.style.fontsize="20px"
+        
+     }
+     </script>
+</body>
+</html>                                                                                             
